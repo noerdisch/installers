@@ -8,12 +8,12 @@ namespace Composer\Installers;
 class ShopwareInstaller extends BaseInstaller
 {
     protected $locations = array(
-        'backend-plugin'    => 'engine/Shopware/Plugins/Local/Backend/{$name}/',
-        'core-plugin'       => 'engine/Shopware/Plugins/Local/Core/{$name}/',
-        'frontend-plugin'   => 'engine/Shopware/Plugins/Local/Frontend/{$name}/',
-        'theme'             => 'templates/{$name}/',
-        'plugin'            => 'custom/plugins/{$name}/',
-        'frontend-theme'    => 'themes/Frontend/{$name}/',
+        'backend-plugin'    => 'public/engine/Shopware/Plugins/Local/Backend/{$name}/',
+        'core-plugin'       => 'public/engine/Shopware/Plugins/Local/Core/{$name}/',
+        'frontend-plugin'   => 'public/engine/Shopware/Plugins/Local/Frontend/{$name}/',
+        'theme'             => 'public/templates/{$name}/',
+        'plugin'            => 'public/custom/plugins/{$name}/',
+        'frontend-theme'    => 'public/themes/Frontend/{$name}/',
     );
 
     /**
